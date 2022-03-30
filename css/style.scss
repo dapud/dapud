@@ -1,0 +1,1244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$ancho: 100%;
+$ancho2:30%;
+$alto: 60%;
+$color1: rgb(158, 17, 116);
+$color2:rgb(9, 162, 209);
+$size: 10px;
+$align: center;
+$justi:center;
+
+
+
+
+.derechos {
+    display: flex;
+    width: $ancho + 30% - $ancho2;
+    height: $alto - 10%;
+    color: $color1 - rgb(226, 9, 190);
+    font-size: $size * 3;
+    justify-content: $justi;
+    align-items: $align;
+
+}
+
+
+body {
+    background-image: url(../imagenes/central/backgroundtheme2.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+
+h1 {
+    width: fit-content;
+    height: fit-content;
+    background: rgb(19, 146, 155);
+    margin: auto;
+    font-size: 600%;
+    color: rgb(8, 8, 7);
+    border-radius: 10px;
+    border: 1px rgb(10, 1, 1) solid;
+    text-shadow: 1px 0px 20px beige;
+
+    transition-duration: 1s;
+
+}
+
+
+h1:hover {
+    font-size: 650%;
+    border: 1px red;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 300%;
+    color: rgb(8, 8, 7);
+    text-shadow: 5px 5px 8px white;
+
+}
+
+h3 {
+
+    text-align: center;
+    font-size: 150%;
+    color: rgb(8, 8, 7);
+    font-family: cursive;
+
+
+}
+
+h3 :hover {
+
+    transform: scale(1.1);
+    letter-spacing: 15px;
+    transition: 1s;
+}
+
+h4 {
+    width: 100%;
+
+    text-align: center;
+    opacity: 20%;
+    letter-spacing: 4px;
+
+}
+
+
+img {
+
+    width: 220px;
+    height: 200px;
+    object-fit: contain;
+    justify-content: center;
+
+}
+
+
+
+.articulos {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+
+
+.articulo1 {
+    background-color: #8cb0c1;
+    width: 250px;
+    height: 550px;
+    border: 2px solid rgb(110, 13, 37);
+    padding: 10px;
+    margin: 10px;
+    display: inline-table;
+    text-align: center;
+    text-align-last: center;
+
+}
+
+.articulo1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+
+}
+
+.escapadasMinuto {
+
+    width: 100%;
+    height: fit-content;
+    border: 1px solid rgb(97, 6, 49);
+    padding: 1px;
+    margin: 1px;
+
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #0dcaf0, rgba(105, 20, 80, 0.103), #0dcaf0);
+
+
+}
+
+.imagenesEscapadas {
+
+    border: 1px solid rgb(2, 1, 1);
+    width: 100%;
+    height: fit-content;
+    padding: 10;
+    margin: 5;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.imes {
+    width: 200px;
+    height: 120px;
+    justify-content: space-around;
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+
+    background-color: rgb(214, 208, 157);
+    text-align: center;
+
+
+}
+
+.pieDePagina {
+    font-size: 600%;
+    color: firebrick;
+}
+
+.pieDePagina:hover {
+    color: darkorange;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 1260px) {
+    .pieDePagina {
+        font-size: 400%;
+        padding: 4%;
+
+
+    }
+}
+
+@media only screen and (max-width: 863px) {
+    .pieDePagina {
+        font-size: 300%;
+        padding: 10%;
+
+    }
+}
+
+@media only screen and (max-width: 611px) {
+    .pieDePagina {
+        font-size: 250%;
+
+    }
+}
+
+.A {
+
+    color: #61cfd2;
+}
+
+.A:hover:hover {
+    color: firebrick;
+    transition: 0.2s;
+}
+
+
+
+.donde {
+
+    color: #61cfd2;
+}
+
+.donde:hover {
+    color: firebrick;
+    transition: 0.2s;
+}
+
+.viajamos {
+
+    color: #61cfd2;
+}
+
+.viajamos:hover {
+    color: firebrick;
+    transition: 0.2s;
+
+
+}
+
+
+.tituloFinal {
+    width: 70%;
+    height: 100%;
+    float: right;
+    background-color: #1e444e;
+    font-size: 20;
+    padding: 2%;
+
+}
+
+.tituloFinal:hover {
+
+    background-color: rgb(177, 15, 46);
+    transition: 0.5s;
+    text-shadow: cornsilk 0px 0px 6px;
+
+}
+
+
+
+.logo {
+
+    width: 30%;
+    height: 50%;
+    background-color: rgb(110, 13, 37);
+    text-align: center;
+
+    font-size: 50px;
+    font-style: italic;
+    color: darkgoldenrod;
+}
+
+@media only screen and (max-width: 932px) {
+    .logo {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.logo:hover {
+
+    transform: translate(7%);
+
+    transition: 1s;
+}
+
+
+.logo2 {
+
+    width: 30%;
+    height: 50%;
+    background-color: darkblue;
+
+    font-size: 50px;
+    font-style: italic;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+@media only screen and (max-width: 932px) {
+    .logo2 {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .logo2 {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+.logo2:hover {
+    transform: translate(7%);
+    transition: 1s;
+
+
+}
+
+.logo3 {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-image: radial-gradient(#6c0202, #1b2b6e);
+    align-items: center;
+
+    font-size: 50px;
+    font-style: italic;
+    color: darkgoldenrod;
+    justify-content: space-evenly;
+}
+
+.logo3:hover {
+    transition: 1s;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(243, 243, 239);
+    font-size: 50px;
+    text-align: center;
+    opacity: 80%;
+}
+
+.contenedorAventura {
+
+
+    width: 100%;
+    height: auto;
+    background-color: rgb(141, 8, 41);
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 300px 300px 300px;
+    border: 2px solid black
+}
+
+.contenedorCultural {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caja1 {
+
+    text-align: center;
+}
+
+.caja2 {
+
+    text-align: center;
+}
+
+
+.combo1--background {
+
+    background-color: #477998b0;
+    border: 1px solid black;
+}
+
+
+.combo1__link__imacul--size {
+    width: 410px;
+    height: 300px;
+    border-radius: 25%;
+}
+
+@media only screen and (max-width: 425px) {
+    .combo1__link__imacul--size {
+        width: 310px;
+        height: 300px;
+        border-radius: 25%;
+    }
+}
+
+
+.combo1__textoCultura--color {
+
+    width: 410px;
+    height: auto;
+    font-size: 20px;
+    margin: 20px;
+    font-family: cursive;
+    text-align: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .combo1__textoCultura--color {
+        width: 380px;
+        height: auto;
+        font-size: 17px;
+        margin: 30px;
+        font-family: cursive;
+        text-align: center;
+        align-self: center;
+
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .combo1__textoCultura--color {
+        width: 310px;
+        height: auto;
+        font-size: 12px;
+        margin: 40px;
+        font-family: cursive;
+        text-align: center;
+        align-self: center;
+
+    }
+}
+
+
+.combo2--border {
+    border: 1px black solid;
+    background-color: #477998b0;
+}
+
+.combo2 {
+
+    width: 500px;
+    height: fit-content;
+
+
+}
+
+
+.combo3--background {
+
+    background-color: #477998b0;
+    border: 1px solid black;
+}
+
+.combo4--border {
+    border: 1px rgb(11, 15, 6) solid;
+    background-color: #477998b0;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+
+
+
+
+#item1 {
+
+    background-image: url(../imagenes/aventura/1aventura1024x300.jpeg);
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-size: cover;
+    background-position: bottom;
+    color: #f5f1f100;
+
+}
+
+#item1 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+
+
+
+}
+
+
+#item2 {
+    background-image: url(../imagenes/aventura/3aventura600x800.jpeg);
+    background-color: rgb(102, 14, 48);
+    grid-column: 3/4;
+    grid-row: 1/3;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-size: cover;
+    background-position: bottom;
+    color: #ffffff00
+}
+
+#item2 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+}
+
+
+
+
+#item3 {
+    background-image: url(../imagenes/aventura/4aventuratra600x800.jpeg);
+    background-color: rgb(173, 20, 92);
+    grid-column: 1/2;
+    grid-row: 2/4;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-size: cover;
+    background-position: bottom;
+    color: #ffffff00
+}
+
+#item3 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+}
+
+
+
+
+
+#item5 {
+    background-image: url(../imagenes/aventura/4aventuratrarapel600x400.jpeg);
+    background-color: rgb(29, 211, 23);
+    grid-column: 2/4;
+    grid-row: 3/4;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-size: cover;
+    background-position: unset;
+    color: #ffffff00
+}
+
+#item5 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+}
+
+
+
+#item4 {
+    background-image: url(../imagenes/aventura/5aventuratra600x800.jpeg);
+    background-color: navy;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-size: cover;
+    background-position: bottom;
+    color: #ffffff00
+}
+
+#item4 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+}
+
+
+
+.contenedorRelax {
+
+
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 300px 300px 300px;
+    border: 2px solid black
+}
+
+
+#item6 {
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-image: url(/imagenes/relax/R-Piscinafull.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+    color: #ffffff00;
+    color: #f5f1f100;
+}
+
+
+#item6 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+
+
+}
+
+
+
+
+#item7 {
+    background-color: rgb(102, 14, 48);
+    grid-column: 3/4;
+    grid-row: 2/4;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-image: url(/imagenes/relax/R-Piscina2600x800.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+    color: #ffffff00
+}
+
+#item7 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+
+
+}
+
+
+#item8 {
+
+    background-color: rgb(173, 20, 92);
+    grid-column: 1/2;
+    grid-row: 2/4;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    overflow: hidden;
+    background-image: url(/imagenes/relax/R-rostromujer600x800.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: #ffffff00
+}
+
+#item8 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+
+
+}
+
+#item9 {
+    background-color: rgb(29, 211, 23);
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-image: url(/imagenes/relax/relax8.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: #ffffff00
+}
+
+#item9 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+
+
+}
+
+
+
+#item10 {
+    background-color: navy;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-image: url(/imagenes/relax/relax9.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+    color: #ffffff00
+}
+
+#item10 span:hover {
+
+    background-color: #0000006b;
+    transition: 1s;
+    color: rgb(248, 242, 242);
+    text-shadow: 1px 1px 2px rgb(7, 7, 0);
+    font-size: smaller;
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+    h1 {
+        background: rgb(2, 110, 38);
+        font-size: 500%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        background: rgb(6, 154, 165);
+        font-size: 400%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    h1 {
+        background: rgb(80, 231, 219);
+        font-size: 300%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    h1 {
+        background: rgb(80, 231, 219);
+        font-size: 250%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    h1 {
+        background: rgb(80, 231, 219);
+        font-size: 194%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    h2 {
+        color: rgb(16, 143, 132);
+        font-size: small;
+
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 300px) {
+    .articulo1 {
+        background: rgb(238, 137, 6);
+
+    }
+}
+
+
+
+
+
+/* Diversion */
+
+.carru {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+
+.imaCar {
+
+    width: 500px;
+    height: 300px;
+}
+
+.diver {
+
+    width: 100px;
+    font-size: 50px;
+}
+
+.lead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    text-align: center;
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+
+@media only screen and (max-width: 932px) {
+    .lead {
+        font-size: 500%;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 761px) {
+    .lead {
+        font-size: 400%;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .lead {
+        font-size: 300%;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .lead {
+        font-size: 200%;
+
+
+
+    }
+}
+
+
+.cajon {
+    display: flex block;
+    width: 100%;
+    height: 100%;
+    background-color: (#37c1cb);
+    justify-content: center;
+}
+
+
+.cajonRoman {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/romantica/romanback.jpeg);
+
+
+}
+
+.cajonesRomanticos {
+    width: fit-content;
+    height: fit-content;
+
+    color: rgb(5, 5, 5);
+
+
+    justify-content: center;
+    align-items: center;
+    display: inline-table;
+    text-align: center;
+    text-align-last: center;
+
+}
+
+.imaRoman {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imaRoman2 {
+
+    width: 700px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texRoman {
+
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .imaRoman2 {
+        width: 500px;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .imaRoman2 {
+        width: 300px;
+    }
+}
+
+.roma1 {
+    background-color: #8cb0c1;
+    width: 250px;
+    height: 520px;
+    border: 2px solid #6e0d25;
+    padding: 10px;
+    margin: 10px;
+    display: inline-table;
+    text-align: center;
+    text-align-last: center;
+
+}
+
+.roma2 {
+    background-color: #8cb0c1;
+    width: 250px;
+    height: 520px;
+    border: 2px solid #6e0d25;
+    padding: 10px;
+    margin: 10px;
+    display: inline-table;
+    text-align: center;
+    text-align-last: center;
+}
+
+.roma3 {
+    background-color: #8cb0c1;
+    width: 250px;
+    height: 520px;
+    border: 2px solid #6e0d25;
+    padding: 10px;
+    margin: 10px;
+    display: inline-table;
+    text-align: center;
+    text-align-last: center;
+}
+
+.roma4 {
+    background-color: #8cb0c1;
+    width: 250px;
+    height: 520px;
+    border: 2px solid #6e0d25;
+    padding: 10px;
+    margin: 10px;
+    display: inline-table;
+    text-align: center;
+    text-align-last: center;
+}
+
+.carrusel2 {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/romantica/romanback.jpeg);
+}
+
+.carru2 {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    color: rgb(101, 5, 226);
+}
+
+.cajaCuotas {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(1, 192, 176);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+
+
+    height: auto;
+
+
+}
+
+.tajeta {
+
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@for $i from 1 through 3 {
+
+    .cuotas-#{$i} {
+        display: flex;
+        width: $i * 8em;
+        font-size: $i * 20px;
+        justify-content: center;
+    }
+}
+
+.cards {
+    display: flex;
+
+    width: 100%;
+    height: 200px;
+    border: rgb(1, 94, 1);
+    background-color: rgb(29, 4, 119);
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.tarjeta-visa,
+.tarjeta-mastercard,
+.tarjeta-amex {
+
+
+
+
+    width: 280px;
+    height: 180px;
+
+    border-radius: 13px;
+
+    background-color: rgb(29, 4, 119);
+
+
+}
+
+@each $tarjeta in visa,
+mastercard,
+amex {
+    .tarjeta-#{$tarjeta} {
+
+
+        background-image: url("../imagenes/diversion/#{$tarjeta}.jpeg");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+}
+
+@media only screen and (max-width: 856px) {
+
+    .tarjeta-visa,
+    .tarjeta-mastercard,
+    .tarjeta-amex {
+
+
+        width: 200px;
+        height: 140px;
+
+        border-radius: 13px;
+
+        background-color: rgb(29, 4, 119);
+    }
+
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    .tarjeta-visa,
+    .tarjeta-mastercard,
+    .tarjeta-amex {
+
+
+        width: 150px;
+        height: 80px;
+
+        border-radius: 13px;
+
+        background-color: rgb(29, 4, 119);
+    }
+
+
+}
+
+
+
+.modal1 {
+    display: flex;
+    justify-content: center;
+}
+
+.botonesPrincipales {
+    display:flexbox;
+    width: auto;
+    height: auto;
+    background-color:#37c1cb;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+  
+    
+}
+
+.estructura {
+
+    display: flex;
+    justify-content: center;
+}
+
+
