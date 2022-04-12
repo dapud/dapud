@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "Destino": "Mendoza",
+        "Estadia": "15 dias",
+        "Precio": "$ 30.000"
+    },
+    {
+        "id": 2,
+        "Destino": "Salta",
+        "Estadia": "30 dias",
+        "Precio": "$ 50.000"
+    },
+    {
+        "id": 3,
+        "Destino": "Colombia",
+        "Estadia": "35 dias",
+        "Precio": "$ 95.000"
+    },
+    {
+        "id": 4,
+        "Destino": "Chile",
+        "Estadia": "20 dias",
+        "Precio": "$ 65.000"
+    },
+    {
+        "id": 5,
+        "Destino": "Peru ",
+        "Estadia": "35 dias",
+        "Precio": "$ 75.000"
+    },
+    {
+        "id": 6,
+        "Destino": "Mexico",
+        "Estadia": "35 dias",
+        "Precio": "$ 100.000"
+    }
+    
+]

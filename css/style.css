@@ -1307,4 +1307,24 @@ h5 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.tablaOfertas {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid #610631;
+  padding: 1px;
+  margin: 1px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: -webkit-gradient(linear, right top, left top, from(#0dcaf0), color-stop(rgba(105, 20, 80, 0.103)), to(#0dcaf0));
+  background-image: linear-gradient(to left, #0dcaf0, rgba(105, 20, 80, 0.103), #0dcaf0);
+}
+
+.striped {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */

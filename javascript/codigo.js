@@ -184,18 +184,54 @@ function guardarEnLocalStorage() {
     console.log(personaRegistro);
   }
 }
-const URL = "https://jsonplaceholder.typicode.com/posts"
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: 'POST',
-  body: JSON.stringify({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+
+//me llevo el set de datos almacenados en la constante JSON, a un archivo .json independiente
+//Tendré que agregarle las comillas a cada propiedad, porque el archivo .json solo entiende strings
+//Resuelto esto, ahora tendré que recurrir a fetch() para leer su contenido e integrarlo en JS
+//los archivos .JSON no soportan código JS en su interior. Tenemos que poner una estructura íntegramente JSON
+//no variables, no constantes, no condicionales, nada que tenga que ver con JS
+//el archivo .JSON simulará un backend que no tenemos, y nos proveerá esa información que nuestra app web necesita
+
+const inputFiltrar = document.querySelector("#filtrar")
+const tbody = document.querySelector("tbody")
+const URL = "/javascript/ofertas.json"
+let arrayOfertas = ""
+
+
+const obtenerDatos = ()=> {
+  fetch(URL)
+           .then(response => 
+              response.json()
+           )
+           .then(data => {
+              //console.table(data)
+              arrayOfertas = data
+              //cargoGrillaOfertas() //activarlo primero, luego comentarlo x finally()
+           })
+            .catch(error => {
+               console.error("Se ha producido un error", error)
+               arrayOfertas = [{id: "Error al obtener datos", Destino: "", Estadia: "", Precio: ""}]
+            }
+           )
+            .finally(error =>
+               cargoGrillaOfertas()
+            )
+           //cargarOfertas() //Si dejo acá, fuera de la promesa, es probable que me de error
+}
+
+const cargoGrillaOfertas = ()=> {
+  let detalleTabla = ""
+  arrayOfertas.forEach(ofertas => {
+        detalleTabla += `<tr>
+                          <td>${ofertas.id}</td>
+                          <td>${ofertas.Destino}</td>
+                          <td>${ofertas.Estadia}</td>
+                          <td>${ofertas.Precio}</td>
+                       </tr>`
+  })
+  tbody.innerHTML = detalleTabla
+}
+
+document.addEventListener("DOMContentLoaded", obtenerDatos)
+  

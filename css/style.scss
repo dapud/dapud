@@ -1242,3 +1242,21 @@ amex {
 }
 
 
+.tablaOfertas {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid rgb(97, 6, 49);
+    padding: 1px;
+    margin: 1px;
+
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #0dcaf0, rgba(105, 20, 80, 0.103), #0dcaf0);
+
+
+}
+.striped {
+    justify-content: space-around;
+    display: inline-block;
+
+    
+}
