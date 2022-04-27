@@ -16,6 +16,8 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/javascript/codigo.js">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -71,39 +73,10 @@
         </div>
     </nav>
     <div class="modal1">
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal"
-            data-whatever="@mdo">Mas info</button>
+        <button type="button" id="btnAventura" onclick="mensajeDestinos()" class="btn btn-info" data-toggle="modal"
+            data-whatever="@mdo">Mas destinos</button>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Ingresa tu email:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Dejanos tu consulta respecto del
-                                    destino elegido:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
     <br>
 
@@ -131,17 +104,17 @@
                 un 26% de su territorio está protegido, es que tiene muchos escenarios para admirar mientras camina. No
                 se tiene que preocupar, porque hay lugares para viajeros principiantes o experimentados en senderismo.
             </span>
-         </div>
+        </div>
 
         <div class="item" id="item4"><span>El hielo infinito de la Patagonia reclama en este rincón del sur de Argentina
                 total protagonismo.</span>
-            </div>
+        </div>
 
         <div class="item" id="item5"><span>El canyoning es un deporte de aventura que se practica en los barrancos de
                 ríos con recorriedos muy variados, tramos rocosos, pozos de agua, cascadas y abundante vegetación
             </span>
         </div>
-        
+
     </div>
 
 
@@ -173,38 +146,40 @@
 
 
 
-<footer>
+    <footer>
 
-    <div class="logo3">
-
-
-        <a href="https://www.instagram.com/">
-            <p><i class="fab fa-instagram-square"> </i></p>
-        </a>
-        <a href="https://www.whatsapp.com">
-            <p><i class="fab fa-whatsapp"></i></p>
-        </a>
-        <a href="https://www.twitch.tv/activate/profile">
-            <p><i class="fab fa-twitch"></i></p>
-        </a>
-        <a href="https://www.facebook.com/">
-            <p><i class="fab fa-facebook"></i></i></p>
-        </a>
+        <div class="logo3">
 
 
-    </div>
+            <a href="https://www.instagram.com/">
+                <p><i class="fab fa-instagram-square"> </i></p>
+            </a>
+            <a href="https://www.whatsapp.com">
+                <p><i class="fab fa-whatsapp"></i></p>
+            </a>
+            <a href="https://www.twitch.tv/activate/profile">
+                <p><i class="fab fa-twitch"></i></p>
+            </a>
+            <a href="https://www.facebook.com/">
+                <p><i class="fab fa-facebook"></i></i></p>
+            </a>
 
-    <div class="derechos">
 
-        <p  id="noDerechos" class="textoDerechos">Copyright © Todos los derechos reservados</p>
+        </div>
 
-    </div>
+        <div class="derechos">
+
+            <p id="noDerechos" class="textoDerechos">Copyright © Todos los derechos reservados</p>
+
+        </div>
 
 
 
-</footer>
-<script src="/javascript/codigo.js"></script>
+    </footer>
+    <script src="/javascript/codigo.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 </body>
+
 </html>

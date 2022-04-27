@@ -21,6 +21,8 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/javascript/codigo.js">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -75,35 +77,10 @@
         </div>
     </nav>
     <div class="modal1">
-        <!-- Button to Open the Modal -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
-            Mas Info
-        </button>
+        <button type="button" id="btnAventura" onclick="masDestinos()" class="btn btn-info" data-toggle="modal"
+            data-whatever="@mdo">Mas destinos</button>
 
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Adonde Viajamos <br> ¡¡¡ links Externos !!!</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        haz click en tu destino preferido y viaja alrededor del mundo !!!
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </div>
     <br>
     <br>
@@ -324,36 +301,36 @@
 
 
 
-<br>
-<footer>
-    <div class="logo3">
+    <br>
+    <footer>
+        <div class="logo3">
 
 
-        <a href="https://www.instagram.com/">
-            <p><i class="fab fa-instagram-square"> </i></p>
-        </a>
-        <a href="https://www.whatsapp.com">
-            <p><i class="fab fa-whatsapp"></i></p>
-        </a>
-        <a href="https://www.twitch.tv/activate/profile">
-            <p><i class="fab fa-twitch"></i></p>
-        </a>
-        <a href="https://www.facebook.com/">
-            <p><i class="fab fa-facebook"></i></i></p>
-        </a>
+            <a href="https://www.instagram.com/">
+                <p><i class="fab fa-instagram-square"> </i></p>
+            </a>
+            <a href="https://www.whatsapp.com">
+                <p><i class="fab fa-whatsapp"></i></p>
+            </a>
+            <a href="https://www.twitch.tv/activate/profile">
+                <p><i class="fab fa-twitch"></i></p>
+            </a>
+            <a href="https://www.facebook.com/">
+                <p><i class="fab fa-facebook"></i></i></p>
+            </a>
 
 
-    </div>
+        </div>
 
 
-    <div class="derechos">
+        <div class="derechos">
 
-        <p  id="noDerechos" class="textoDerechos">Copyright © Todos los derechos reservados</p>
+            <p id="noDerechos" class="textoDerechos">Copyright © Todos los derechos reservados</p>
 
-    </div>
+        </div>
 
-</footer>
-<script src="/javascript/codigo.js"></script>
+    </footer>
+    <script src="/javascript/codigo.js"></script>
 
 </body>
 
