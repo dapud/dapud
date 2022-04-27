@@ -23,7 +23,7 @@
       );
       }
      }
-
+    
       const oferta1 = new oferta("aventura", "mendoza", 10, 20000, "media pension ");
       const oferta2 = new oferta("relax", "san juan ", 15, 30000, "pension completa");
       const oferta3 = new oferta("romantico", "tucuman", 17, 40000, "media pension");
@@ -77,7 +77,7 @@
                    
               
   }
-  mensaje()  
+ 
 }
 
   
@@ -97,20 +97,16 @@
         "Paraná ",
         "Formosa ",
         "San Salvador de Jujuy ",
-        
         "La Rioja ",
         "Mendoza ",
         "Posadas ",
         "Neuquén ",
         "Viedma ",
         "Salta ",
-        
         "San Luis ",
         "Río Gallegos ",
         "Santa Fe ",
-        
-        "Ushuaia ",
-        
+        "Ushuaia ", 
       ];
 
 
@@ -142,12 +138,13 @@
     "San Miguel de Tucumán ",
   ];
 
-
-
-
-
   
 
+
+
+  function mostrarMas(){
+
+    
   const nuevosDestinos = document.getElementById("nuevosDestinos");
   for (let i = 0; i < destinoNacional.length; i++) {
     const li = document.createElement("li");
@@ -155,6 +152,10 @@
     nuevosDestinos.appendChild(li);
     console.log(nuevosDestinos);
   }
+
+  
+}
+/* setTimeout (mostrarMas, 2000); */
 
 
 
@@ -212,9 +213,9 @@ const obtenerDatos = ()=> {
               response.json()
            )
            .then(data => {
-              //console.table(data)
+              
               arrayOfertas = data
-              //cargoGrillaOfertas() //activarlo primero, luego comentarlo x finally()
+              
            })
             .catch(error => {
                console.error("Se ha producido un error", error)
@@ -224,7 +225,7 @@ const obtenerDatos = ()=> {
             .finally(error =>
                cargoGrillaOfertas()
             )
-           //cargarOfertas() //Si dejo acá, fuera de la promesa, es probable que me de error
+           
 }
 
 const cargoGrillaOfertas = ()=> {
@@ -264,7 +265,7 @@ function btnRomantico(){
         break;
    
       default:
-        swal(" Creo que tomaste la mejor decision , estan todos locos jajaja!");
+        swal(" Creo que tomaste la mejor decision , estan todos muy locos como para viajar con alguien jajaja!");
     }
   });
   
